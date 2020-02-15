@@ -14,6 +14,7 @@ func main() {
 	}
 
 	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
+		defer r.Body.Close()
 		if r.Method == http.MethodPost || r.Method == http.MethodPut {
 			io.Copy(os.Stdout, r.Body)
 			io.WriteString(os.Stdout, "\n")
