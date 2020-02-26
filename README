@@ -3,3 +3,5 @@ copy HTTP POST and PUT bodies to stdout
 works great with port forwarding or stern: https://github.com/wercker/stern
 
 PORT=8080 ./main
+
+Container: <https://hub.docker.com/r/johnelliott/http-stdout>
