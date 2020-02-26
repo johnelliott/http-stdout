@@ -4,4 +4,4 @@ works great with port forwarding or stern: https://github.com/wercker/stern
 
 PORT=8080 ./main
 
-Container: <https://hub.docker.com/r/johnelliott/http-stdout>
+Container: https://hub.docker.com/r/johnelliott/http-stdout
